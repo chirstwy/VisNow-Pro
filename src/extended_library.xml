@@ -1,0 +1,147 @@
+
+<library name="internal">
+    <!--
+    This library contains internal VisNow modules for acquiring,
+    analysing and displaying data.
+    -->
+    <core package="pl.edu.icm.visnow.lib.basic.viewers.Viewer2D"/>
+    <core package="pl.edu.icm.visnow.lib.basic.viewers.Viewer3D"/>
+    <core package="pl.edu.icm.visnow.lib.basic.viewers.FieldViewer3D"/>
+    <core package="pl.edu.icm.visnow.lib.basic.viewers.FieldViewer1D"/>
+    <folder name="readers" autohelpfile="pl.edu.icm.visnow.lib.basic.readers.help_folder.html">
+        <folder name="regular data readers" autohelpfile="pl.edu.icm.visnow.lib.basic.readers.medreaders.help_folder.html" open="yes">
+            <core package="pl.edu.icm.visnow.lib.basic.readers.ReadVisNowField"/>
+            <core package="pl.edu.icm.visnow.lib.basic.readers.ReadImage"/>
+            <core package="pl.edu.icm.visnow.lib.basic.readers.ReadVTK"/>
+            <core package="pl.edu.icm.visnow.lib.basic.readers.VolumeReader"/>
+            <core package="pl.edu.icm.visnow.lib.basic.readers.ReadAVSField"/>
+            <core package="pl.edu.icm.visnow.lib.basic.readers.GaussianCubeReader"/>
+            <core package="pl.edu.icm.visnow.lib.basic.readers.ReadUnknownVolume"/>
+            <core package="pl.edu.icm.visnow.lib.basic.readers.ReadFloatDataArray"/>
+            <core package="pl.edu.icm.visnow.lib.basic.readers.ReadCSV"/>
+        </folder>
+        <folder name="irregular data readers" autohelpfile="pl.edu.icm.visnow.lib.basic.readers.medreaders.help_folder.html" open="yes">
+            <core package="pl.edu.icm.visnow.lib.basic.readers.ReadVisNowField"/>
+            <core package="pl.edu.icm.visnow.lib.basic.readers.ReadUCD"/>
+            <core package="pl.edu.icm.visnow.lib.basic.readers.ReadVTK"/>
+            <core package="pl.edu.icm.visnow.lib.basic.readers.ReadOBJ"/>
+            <core package="pl.edu.icm.visnow.lib.basic.readers.ExtendedReadGADGET2"/>
+            <core package="pl.edu.icm.visnow.lib.basic.readers.ReadEnSightGoldCase"/>
+            <core package="pl.edu.icm.visnow.lib.basic.readers.ReadFluent"/>            
+            <core package="pl.edu.icm.visnow.lib.basic.readers.ReadSTL"/>            
+        </folder>
+        <folder name="medical data readers" autohelpfile="pl.edu.icm.visnow.lib.basic.readers.medreaders.help_folder.html" open="no">
+            <core package="pl.edu.icm.visnow.lib.basic.readers.medreaders.ReadDICOM"/>
+        </folder>
+    </folder>
+    <folder name="test objects" autohelpfile="pl.edu.icm.visnow.lib.basic.testdata.help_folder.html" autosort="yes">
+        <core package="pl.edu.icm.visnow.lib.basic.testdata.TestRegularField3D"/>
+        <core package="pl.edu.icm.visnow.lib.basic.testdata.TestRegularField2D"/>
+        <core package="pl.edu.icm.visnow.lib.basic.testdata.TestRegularField1D"/>
+        <core package="pl.edu.icm.visnow.lib.basic.testdata.TestPoints"/>
+        <core package="pl.edu.icm.visnow.lib.basic.testdata.TestLineMesh"/>
+        <core package="pl.edu.icm.visnow.lib.basic.testdata.TestCells"/>
+        <core package="pl.edu.icm.visnow.lib.basic.testdata.TestIrregularFieldFlow"/>
+        <core package="pl.edu.icm.visnow.lib.basic.testdata.ColorCube"/>
+        <core package="pl.edu.icm.visnow.lib.basic.testdata.VNLogo"/>
+    </folder>
+    <folder name="utilities" autohelpfile="pl.edu.icm.visnow.lib.basic.utilities.help_folder.html" autosort="yes">
+        <core package="pl.edu.icm.visnow.lib.basic.filters.FieldCombiner"/>
+        <core package="pl.edu.icm.visnow.lib.basic.utilities.FieldStats"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.AccumulateIrregularFields"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.AccumulateTimesteps"/>
+        <core package="pl.edu.icm.visnow.lib.basic.utilities.KernelEditor"/>
+        <core package="pl.edu.icm.visnow.lib.basic.utilities.Annotations"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.ComponentCalculator"/>
+    </folder>
+    <folder name="geometry filters" autohelpfile="pl.edu.icm.visnow.lib.basic.filters.help_folder_geometry.html" autosort="yes">
+        <core package="pl.edu.icm.visnow.lib.basic.filters.RadialCoordinates"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.ReindexRegularField"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.GroupTransform"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.ComponentOperations"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.Triangulation"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.Boundaries"/>
+    </folder>
+    <folder name="data filters" autohelpfile="pl.edu.icm.visnow.lib.basic.filters.help_folder_data.html" autosort="yes">
+        <core package="pl.edu.icm.visnow.lib.basic.filters.ComponentCalculator"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.ComponentOperations"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.CropDown"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.SimpleProjection"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.AddMargins"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.RegularFieldDifferentialOperations"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.CorrelationAnalysis"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.InterpolationToRegularField"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.MulticomponentHistogram"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.FFT"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.Convolution"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.CellToNode"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.Canny"/>
+    </folder>
+    <folder name="smoothing and denoising" autohelpfile="pl.edu.icm.visnow.lib.basic.filters.help_folder_smoothing.html" autosort="yes">
+        <core package="pl.edu.icm.visnow.lib.basic.filters.SplineInterpolation"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.GaussianFilter"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.AnisotropicDenoiser"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.LocalOperations"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.IntensityEqualizer"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.SmoothDown"/>
+    </folder>
+    <folder name="3D field mappers" autohelpfile="pl.edu.icm.visnow.lib.basic.mappers.help_folder_3d.html" autosort="yes">
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.FieldMapper"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.Axes3D"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.Glyphs"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.TextGlyphs"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.DitheredGlyphs"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.TubeGlyphs"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.Isosurface"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.Isovolume"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.LineSlice"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.SurfaceComponents"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.VolumeRenderer"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.PlanarSlice"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.RegularFieldSlice"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.InterpolatedSlice"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.Streamlines"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.VectorFieldDisplacement"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.ObjectFlow"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.AnimatedStream"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.ScaleCells"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.CellCenters"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.Trajectories"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.ParallelCoordinates"/>
+    </folder>
+    <folder name="2D field mappers" autohelpfile="pl.edu.icm.visnow.lib.basic.mappers.help_folder_2d.html" autosort="yes">
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.Axes3D"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.FieldMapper"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.Glyphs"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.LineSlice"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.Isolines"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.Graph3D"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.RibbonPlot"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.CityPlot"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.ParallelCoordinates"/>
+    </folder>
+    <folder name="1D field mappers" autohelpfile="pl.edu.icm.visnow.lib.basic.mappers.help_folder_1d.html" autosort="yes">
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.Axes3D"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.FieldMapper"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.Glyphs"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.Graph"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.ParallelCoordinates"/>
+    </folder>
+    <folder name="writers" autohelpfile="pl.edu.icm.visnow.lib.basic.writers.help_folder.html">
+        <core package="pl.edu.icm.visnow.lib.basic.writers.VolumeWriter"/>
+        <core package="pl.edu.icm.visnow.lib.basic.writers.FieldWriter"/>
+        <core package="pl.edu.icm.visnow.lib.basic.writers.UCDWriter"/>
+        <core package="pl.edu.icm.visnow.lib.basic.writers.WriteOBJ"/>
+        <core package="pl.edu.icm.visnow.lib.basic.writers.ImageWriter"/>
+    </folder>
+    <folder name="special viewers">
+        <core package="pl.edu.icm.visnow.lib.basic.viewers.MultiViewer3D"/>
+    </folder>
+    <folder name="skeletonization and segmentation">
+        <core package="pl.edu.icm.visnow.lib.basic.filters.VolumeSegmentation"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.MultiVolumeSegmentation"/>
+        <core package="pl.edu.icm.visnow.lib.basic.filters.SegmentationMask"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.SegmentedSurfaces"/>
+        <core package="pl.edu.icm.visnow.lib.basic.mappers.Skeletonizer"/>
+    </folder>
+ </library>

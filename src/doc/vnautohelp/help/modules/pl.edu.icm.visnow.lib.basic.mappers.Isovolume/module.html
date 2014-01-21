@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Module - Isovolume</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+                
+    </style>
+  </head>
+  <body>
+      <table width="100%" border="0">
+          <tr>
+              <td align="left">
+                  <img src="../../common/images/horizontal.png" width="200" height="64"/>
+              </td>
+              <td align="right">
+                  <img src="../../common/images/icm_logo.png" width="120" height="64"/>
+              </td>
+          </tr>
+      </table>
+      
+      <h1>Module: Isovolume</h1>
+      <p><img src="resources/module_image_pl.edu.icm.visnow.lib.basic.mappers.Isovolume.png"/><br></p>
+      <p>Cuts subvolume consisting of all points with component values above/below threshold<br><br></p>
+      <table border="1">          
+      <tr bgcolor="silver">
+         <th width=150 height="40">input port</th>
+         <th width=150>type</th>
+         <th width=500>description</th>
+         <th width=300>data acceptors</th>
+      </tr>
+<tr>
+         <td valign="top">inField</td>
+         <td valign="top"><font color="#0000ff">VNField</font></td>
+         <td valign="top">Input for data field to extract isosurface</td>
+         <td valign="top">Regular Field <br>scalar component<br>Irregular Field 3-space <br>scalar component<br>with 3D cells<br></td>
+      </tr>
+<tr bgcolor="silver">
+         <th height="40">output port</th>
+         <th>type</th>
+         <th>description</th>
+         <th>data schemas</th>
+      </tr>
+<tr>
+         <td valign="top">outField</td>
+         <td valign="top"><font color="#8800ff">VNIrregularField</font></td>
+         <td valign="top">Output for surface field</td>
+         <td valign="top">Irregular Field 3-space<br>0 cell sets<br>with TRIANGLE cells<br></td>
+      </tr>
+<tr>
+         <td valign="top">outObj</td>
+         <td valign="top"><font color="#ee0000">VNGeometryObject</font></td>
+         <td valign="top"></td>
+         <td valign="top"></td>
+      </tr>
+</table>
+      <br><br><br>
+      <hr><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>&nbsp;</span><span style="font-weight:bold">Isovolume</span></p><hr><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The module cuts the input mesh using an isosurface of the selected component with a specified isolevel value. It outputs the portion of the mesh that is on one side of the cutting isosurface, along with the data for one or more components. The dimensionality of the resulting mesh is the same as dimensionality of original mesh.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Input data</span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The input field is regular with at least one scalar component or irregular 3-space with at least one scalar component and at least one cellset containing 3D cells.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Output data</span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The output field is irregular 3-space, there is the geometry object of the field.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Computation parameters</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><img height="135" src="resources/images/image01.jpg" width="242"></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The </span><span style="font-weight:bold">threshold component</span><span>&nbsp;drop down list selects the input component for the isolevel value.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The </span><span style="font-weight:bold">threshold</span><span>&nbsp;slider defines the isolevel value. If checkbox on the right hand side of the slider is on, the user may adjust range and value entering the values in text boxes. For values below and above minimum and maximum value of input data the lowest and highest value is used.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>A radio button menu selects the extracted volume </span><span style="font-style:italic">above</span><span>&nbsp;or </span><span style="font-style:italic">below</span><span>&nbsp;the isosurface.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>&nbsp; </span><span style="font-weight:bold">Presentation tab</span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>Presentation tab contents are described in the common interfaces section unter the </span><span style="color:#1155cc;text-decoration:underline;font-weight:bold">Presentation Panel</span><span>&nbsp;entry.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>Example</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><img height="233" src="resources/images/image00.jpg" width="335"></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>Choose the</span><span style="font-weight:bold">&nbsp;volume reader</span><span>&nbsp;module from the regular data readers library, the </span><span style="font-weight:bold">isovolume</span><span>&nbsp;and </span><span style="font-weight:bold">irregular field slice</span><span>&nbsp;modules from 3D field mappers library and connect them. Read in </span><span style="font-style:italic">lobster.dat</span><span>&nbsp;file. In the isovolume module UI choose threshold </span><span style="font-style:italic">70 </span><span>and the </span><span style="font-style:italic">above</span><span>&nbsp;option. In the irregular field slice module UI choose </span><span style="font-style:italic">xy-slice</span><span>, and in its GUI choose </span><span style="font-style:italic">lines</span><span>&nbsp;instead of </span><span style="font-style:italic">surfaces</span><span>.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><img height="384" src="resources/images/image02.jpg" width="368"></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p>
+  </body>
+</html>

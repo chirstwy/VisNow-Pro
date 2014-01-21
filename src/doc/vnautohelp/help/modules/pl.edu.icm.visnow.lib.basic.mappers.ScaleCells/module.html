@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Module - Shrink Cells</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+                
+    </style>
+  </head>
+  <body>
+      <table width="100%" border="0">
+          <tr>
+              <td align="left">
+                  <img src="../../common/images/horizontal.png" width="200" height="64"/>
+              </td>
+              <td align="right">
+                  <img src="../../common/images/icm_logo.png" width="120" height="64"/>
+              </td>
+          </tr>
+      </table>
+      
+      <h1>Module: Shrink Cells</h1>
+      <p><img src="resources/module_image_pl.edu.icm.visnow.lib.basic.mappers.ScaleCells.png"/><br></p>
+      <p>shrinks all cells by a constant factor to reveal cell structure<br><br></p>
+      <table border="1">          
+      <tr bgcolor="silver">
+         <th width=150 height="40">input port</th>
+         <th width=150>type</th>
+         <th width=500>description</th>
+         <th width=300>data acceptors</th>
+      </tr>
+<tr>
+         <td valign="top">inField</td>
+         <td valign="top"><font color="#0000ff">VNField</font></td>
+         <td valign="top"></td>
+         <td valign="top"></td>
+      </tr>
+<tr bgcolor="silver">
+         <th height="40">output port</th>
+         <th>type</th>
+         <th>description</th>
+         <th>data schemas</th>
+      </tr>
+<tr>
+         <td valign="top">outField</td>
+         <td valign="top"><font color="#8800ff">VNIrregularField</font></td>
+         <td valign="top"></td>
+         <td valign="top"></td>
+      </tr>
+<tr>
+         <td valign="top">outObj</td>
+         <td valign="top"><font color="#ee0000">VNGeometryObject</font></td>
+         <td valign="top">Output of geometry object for 3D rendered volume</td>
+         <td valign="top"></td>
+      </tr>
+</table>
+      <br><br><br>
+      <hr><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">SHRINK CELLS</span></p><hr><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The shrink cells module produces a mesh containing disjoint cells which can be optionally shrunk relative to their geometric centers.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Input data</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>At input the module requires a field.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Output data</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The output field is irregular 3-space. There is a 3D geometry object of the field.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Computation parameters</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><img height="62" src="resources/images/image01.jpg" width="238"></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The </span><span style="font-weight:bold">shrink scale </span><span>slider adjusts a scaling factor between 0 and 1. If check box on the right hand side is on the user can change minimum, maximum and current value by typing the values into the text fields.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Presentation parameters</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>Presentation tab contents are described in the common interfaces section unter the </span><span style="font-weight:bold">Presentation Panel</span><span>&nbsp;entry.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Example</span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><img height="182" src="resources/images/image00.jpg" width="330"></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>Choose the</span><span style="font-weight:bold">&nbsp;test cells</span><span>&nbsp;module from test objects library, </span><span style="font-weight:bold">shrink cells</span><span>&nbsp;module from the general mappers and accessories library, move them to the workspace &nbsp;and connect them. &nbsp;Choose an appropriate value for &nbsp;</span><span>shrink scale </span><span>in the shrink cells module GUI. In the test cells module presentation parameters choose </span><span style="font-style:italic">lines</span><span>&nbsp;and switch off </span><span style="font-style:italic">surfaces</span><span>.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><img height="382" src="resources/images/image02.jpg" width="385"></p>
+  </body>
+</html>

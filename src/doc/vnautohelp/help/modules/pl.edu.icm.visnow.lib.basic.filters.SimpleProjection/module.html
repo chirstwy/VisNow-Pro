@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Module - Simple Projection</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+                
+    </style>
+  </head>
+  <body>
+      <table width="100%" border="0">
+          <tr>
+              <td align="left">
+                  <img src="../../common/images/horizontal.png" width="200" height="64"/>
+              </td>
+              <td align="right">
+                  <img src="../../common/images/icm_logo.png" width="120" height="64"/>
+              </td>
+          </tr>
+      </table>
+      
+      <h1>Module: Simple Projection</h1>
+      <p><img src="resources/module_image_pl.edu.icm.visnow.lib.basic.filters.SimpleProjection.png"/><br></p>
+      <p><br><br></p>
+      <table border="1">          
+      <tr bgcolor="silver">
+         <th width=150 height="40">input port</th>
+         <th width=150>type</th>
+         <th width=500>description</th>
+         <th width=300>data acceptors</th>
+      </tr>
+<tr>
+         <td valign="top">inField</td>
+         <td valign="top"><font color="#0088ff">VNRegularField</font></td>
+         <td valign="top"></td>
+         <td valign="top">Regular Field 2D with affine geometry <br>Regular Field 3D with affine geometry <br></td>
+      </tr>
+<tr bgcolor="silver">
+         <th height="40">output port</th>
+         <th>type</th>
+         <th>description</th>
+         <th>data schemas</th>
+      </tr>
+<tr>
+         <td valign="top">outField</td>
+         <td valign="top"><font color="#0088ff">VNRegularField</font></td>
+         <td valign="top"></td>
+         <td valign="top">Regular Field with affine geometry <br></td>
+      </tr>
+<tr>
+         <td valign="top">outObj</td>
+         <td valign="top"><font color="#ee0000">VNGeometryObject</font></td>
+         <td valign="top"></td>
+         <td valign="top"></td>
+      </tr>
+</table>
+      <br><br><br>
+      <hr><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>&nbsp;</span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">SIMPLE PROJECTION</span></p><hr><p style="text-align:left;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>&nbsp;</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The simple projection module carries out a regular field projection of the first field component parallel to one of the coordinate axes.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>&nbsp;</span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Input data</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The input field is regular 2D or 3D with affine geometry.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>&nbsp;</span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Output data</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The output field is regular 2D or 1D with affine geometry.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>&nbsp;</span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Computation parameters</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><img height="201" src="resources/images/image01.jpg" width="262"></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The </span><span style="font-weight:bold">projection method </span><span>drop down list chooses between several projection methods: </span><span style="font-style:italic">max, min, mean, normalized mean</span><span>.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The </span><span style="font-weight:bold">first projection axis</span><span>&nbsp;radio button menu allows to choose the projection axis. It diminishes the field dimension by one.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>If the input field is 3D the </span><span style="font-weight:bold">second projection axis </span><span>check box can be switched on and a second projection of the first projection results is made. It diminishes the field dimension by one, the output field is then 1D.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Example</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><img height="265" src="resources/images/image00.jpg" width="341"></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>Choose </span><span style="font-weight:bold">test regular field 3D</span><span>&nbsp;module from test objects library, </span><span style="font-weight:bold">simple projection</span><span>&nbsp;module from data filters library, </span><span style="font-weight:bold">graph 3D</span><span>&nbsp;module from 2D field mappers library and </span><span style="font-weight:bold">axes 3D</span><span>&nbsp;module from general mappers and accessories library and connect them. </span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>In simple projection module UI choose </span><span style="font-style:italic">z</span><span>&nbsp;as first projection axis with </span><span style="font-style:italic">max</span><span>&nbsp;projection method. In graph 3D module UI switch set z-coordinate to field range on.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><img height="353" src="resources/images/image02.jpg" width="342"></p>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Module - Regular Field Slice</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+                
+    </style>
+  </head>
+  <body>
+      <table width="100%" border="0">
+          <tr>
+              <td align="left">
+                  <img src="../../common/images/horizontal.png" width="200" height="64"/>
+              </td>
+              <td align="right">
+                  <img src="../../common/images/icm_logo.png" width="120" height="64"/>
+              </td>
+          </tr>
+      </table>
+      
+      <h1>Module: Regular Field Slice</h1>
+      <p><img src="resources/module_image_pl.edu.icm.visnow.lib.basic.mappers.RegularFieldSlice.png"/><br></p>
+      <p>slices a 3D regular field by fixing one of the indices at selected level <br><br></p>
+      <table border="1">          
+      <tr bgcolor="silver">
+         <th width=150 height="40">input port</th>
+         <th width=150>type</th>
+         <th width=500>description</th>
+         <th width=300>data acceptors</th>
+      </tr>
+<tr>
+         <td valign="top">inField</td>
+         <td valign="top"><font color="#0088ff">VNRegularField</font></td>
+         <td valign="top"></td>
+         <td valign="top">Regular Field 3D <br></td>
+      </tr>
+<tr bgcolor="silver">
+         <th height="40">output port</th>
+         <th>type</th>
+         <th>description</th>
+         <th>data schemas</th>
+      </tr>
+<tr>
+         <td valign="top">outField</td>
+         <td valign="top"><font color="#0088ff">VNRegularField</font></td>
+         <td valign="top"></td>
+         <td valign="top">Regular Field 2D 3-space with affine geometry <br></td>
+      </tr>
+<tr>
+         <td valign="top">outObj</td>
+         <td valign="top"><font color="#ee0000">VNGeometryObject</font></td>
+         <td valign="top">Output of geometry object for 3D rendered volume</td>
+         <td valign="top"></td>
+      </tr>
+</table>
+      <br><br><br>
+      <hr><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>&nbsp;</span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">REGULAR FIELD SLICE</span></p><hr><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>&nbsp;</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The regular field slice extracts a 2D slice from a 3D regular field. The slice plane can only be orthogonal to a coordinate axis.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>&nbsp;</span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Input data</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The input must contain a regular 3D field.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>&nbsp;</span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Output data</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>At output the module gives a regular 2D 3-space field with affine geometry and a 3D geometry object of the output field.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>&nbsp;</span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Computation parameters</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><img height="97" src="resources/images/image01.jpg" width="239"></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The </span><span style="font-weight:bold">axis </span><span>radio button panel defines the slice plane direction orthogonal to </span><span style="font-style:italic">x-, y</span><span>- or</span><span style="font-style:italic">&nbsp;z</span><span>-axis.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>The </span><span style="font-weight:bold">slice</span><span>&nbsp;slider picks the slice position. Default is a value in the middle between minimum and maximum slice position. If check box on the right hand side is on the user is able to change minimum, maximum and current value typing in the values into the text field on the right hand side.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>&nbsp;</span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Presentation parameters</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold"></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>Presentation tab contents are described in the common interfaces section unter the </span><span style="font-weight:bold">Presentation Panel</span><span>&nbsp;entry.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><hr><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span style="font-weight:bold">Example</span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><img height="203" src="resources/images/image02.jpg" width="331"></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span>Choose the </span><span style="font-weight:bold">test regular field 3D </span><span>module from the test objects library, the </span><span style="font-weight:bold">regular field slice</span><span>&nbsp;module from the 3D field mappers library and connect them. In the regular field slice GUI choose </span><span style="font-style:italic">multipole</span><span>&nbsp;as color component.</span></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p><p style="color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><img height="384" src="resources/images/image00.jpg" width="368"></p><p style="height:11pt;color:#000000;direction:ltr;font-size:11pt;margin:0;font-family:"Arial";padding:0"><span></span></p>
+  </body>
+</html>
