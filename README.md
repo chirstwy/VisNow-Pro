@@ -1,3 +1,5 @@
+# VisNow project has been moved to [gitlab.com](https://gitlab.com/ICM-VisLab/VisNow). 
+
 VisNow-Pro
 ==========
 
